@@ -482,7 +482,9 @@ strong {
 em {
     padding: 0 5px 0 2px;
     font-style: normal;
-    color: #42b983;
+    color: #4abdeb;
+    /* color: #4b6c9e; */
+    /* color: #42b983; */
 }
 
 /* inline code */
@@ -607,168 +609,6 @@ footer {
     visibility: visible;
 }
 
-.md-lang {
-    color: #b4654d;
-}
-
-.html-for-mac .context-menu {
-    --item-hover-bg-color: #E6F0FE;
-}
-
-/* 代码框 */
-/* CodeMirror 3024 Day theme */
-
-/* 代码段 背景 */
-pre {
-    --select-text-bg-color: rgba(223, 197, 223) !important;
-}
-
-/* border and bg */
-.md-fences {
-    border: 1px solid #e7eaed;
-    border-radius: 3px;
-    background: #ffffff !important;
-}
-
-.cm-s-inner {
-  padding: .25rem;
-  border-radius: .25rem;
-}
-
-.cm-s-inner.CodeMirror, .cm-s-inner .CodeMirror-gutters {
-  /* background-color: #f8f8f8 !important; */
-  color: #3a3432 !important;
-  border: none;
-}
-
-.cm-s-inner .CodeMirror-gutters {
-  color: #6d8a88;
-}
-
-.cm-s-inner .CodeMirror-cursor {
-  border-left: solid thin #5c5855 !important;
-}
-
-.cm-s-inner .CodeMirror-linenumber {
-  color: #807d7c;
-}
-
-.cm-s-inner .CodeMirror-line::selection, .cm-s-inner .CodeMirror-line::-moz-selection,
-.cm-s-inner .CodeMirror-line > span::selection,
-.cm-s-inner .CodeMirror-line > span::-moz-selection,
-.cm-s-inner .CodeMirror-line > span > span::selection,
-.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
-  background: var(--purple-light-1);
-}
-
-.cm-s-inner span.cm-comment {
-  color: #cdab53;
-}
-
-.cm-s-inner span.cm-string, .cm-s-inner span.cm-string-2 {
-  color: #f2b01d;
-}
-
-.cm-s-inner span.cm-number {
-  color: #a34e8f;
-}
-
-.cm-s-inner span.cm-variable {
-  color: #3a3a3a;
-}
-
-.cm-s-inner span.cm-variable-2 {
-  color: #01a0e4;
-}
-
-.cm-s-inner span.cm-def {
-  /* color: #e8bbd0; */
-  color: #e2287f;
-}
-
-.cm-s-inner span.cm-operator {
-  color: #ff79c6;
-}
-
-.cm-s-inner span.cm-keyword {
-  color: #db2d20;
-}
-
-.cm-s-inner span.cm-atom {
-  color: #a34e8f;
-}
-
-.cm-s-inner span.cm-meta {
-  color: inherit;
-}
-
-.cm-s-inner span.cm-tag {
-  color: #db2d20;
-}
-
-.cm-s-inner span.cm-attribute {
-  color: #01a252;
-}
-
-.cm-s-inner span.cm-qualifier {
-  color: #388aa3;
-}
-
-.cm-s-inner span.cm-property {
-  color: #01a252;
-}
-
-.cm-s-inner span.cm-builtin {
-  color: #388aa3;
-}
-
-.cm-s-inner span.cm-variable-3, .cm-s-inner span.cm-type {
-  color: #ffb86c;
-}
-
-.cm-s-inner span.cm-bracket {
-  color: #3a3432;
-}
-
-.cm-s-inner span.cm-link {
-  color: #a34e8f;
-}
-
-.cm-s-inner span.cm-error {
-  background: #db2d20;
-  color: #5c5855;
-}
-
-.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
-  background: var(--purple-light-2);
-}
-
-.cm-s-inner .CodeMirror-matchingbracket {
-  text-decoration: underline;
-  color: #a34e8f !important;
-}
-
-#fences-auto-suggest .active {
-  background: #ddd;
-}
-
-/* language tip */
-.code-tooltip {
-  bottom: initial;
-  top: calc(100% - 1px);
-  /* background: #f7f7f7; */
-  border: 1px solid #ddd;
-  /* border-top: 0; */
-}
-
-.auto-suggest-container {
-  border-color: #b4b4b4;
-}
-
-.auto-suggest-container .autoComplt-hint.active {
-  background: #b4b4b4;
-  color: inherit;
-}
 
 /* task list */
 .md-task-list-item > input {
@@ -832,62 +672,15 @@ pre {
   opacity: .6;
 }
 
-/* sidebar and outline */
-.pin-outline .outline-active {
-  color: var(--active-file-text-color); 
+div.example {margin-left: 3.2em}
+
+pre.smallexample {
+    background: #f2f2f9;
+    display: inline-block;
 }
 
-.file-list-item {
-    border-bottom: 1px solid;
-    border-color: var(--purple-light-5);
-}
-
-.file-list-item-summary {
-    font-weight: 400;
-}
-
-.file-list-item.active {
-    color: var(--active-file-text-color);
-    background-color: var(--purple-light-5);
-}
-
-.file-tree-node.active>.file-node-background {
-    background-color: var(--purple-light-5);
-    font-weight: 500;
-} 
-
-.file-tree-node.active>.file-node-content {
-    color: var(--active-file-text-color);
-    font-weight: 500;
-}
-
-.file-node-content {
-    color: #5e676d;
-}
-
-.sidebar-tabs {
-    border-bottom: none;
-}
-.sidebar-tab.active {
-    font-weight: 400;
-}
-
-.sidebar-content-content {
+.example {
+    background: #f2f2f9;
+    display: inline-block;
     font-size: 0.9rem;
 }
-
-/* 搜索 */
-.ty-file-search-match-text {
-    background-color: var(--purple-light-4);
-}
-.md-search-hit {
-    background-color: var(--purple-light-4);
-    contain: style;
-    /* transform: translate3d(0,0,0); */
-}
-
-
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
-
-
-div.example {margin-left: 3.2em}
