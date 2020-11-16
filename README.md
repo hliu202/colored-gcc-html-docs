@@ -1,16 +1,20 @@
-Colored GCC docs with customized css style. Currently:
-
-1. only the purple.css style is added.
-2. only [gcc internal docs](https://gcc.gnu.org/onlinedocs/gccint/index.html#Top) are added. Version is 10.2.
+Colored GCC docs with customized css style.
 
 ## How to use
 
-Open `gccint/index.html` or `gcc-internal-docs.html` with your favorable web browser.
+Open with web browser:
+
+- `gccint-index.html`
+
+- `gcc-index.html`
+- `libiberty-index.html`
 
 ## How to change style
 
 ```bash
-rm gccint/css/style.css
-ln -s <path-to-your-css-style> gccint/css/style.css
+rm css/style.css
+ln -s <path-to-your-css-style> css/style.css
 ```
+
+
 
