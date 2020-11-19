@@ -1071,6 +1071,8 @@ em {
 
 /* inline code */
 code,
+pre,
+samp,
 tt {
   padding: 2px 4px;
   border-radius: 2px;
