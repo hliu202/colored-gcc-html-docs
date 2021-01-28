@@ -45,17 +45,6 @@ a:hover {
   background: var(--select-text-bg-color);
   color: var(--select-text-font-color);
 }
- {
-  margin: 0px auto;
-  height: auto;
-  width: inherit;
-  word-break: normal;
-  overflow-wrap: break-word;
-  position: relative;
-  white-space: normal;
-  overflow-x: visible;
-  padding-top: 40px;
-}
 #write.first-line-indent p {
   text-indent: 2em;
 }
@@ -101,7 +90,7 @@ li > figure:last-child {
 ol,
 ul {
   position: relative;
-  list-style: none;
+  /* list-style: none; */
 }
 img {
   max-width: 100%;
@@ -704,7 +693,7 @@ mark .md-meta {
 
 :root {
   --control-text-color: #777;
-  --select-text-bg-color: rgba(223, 197, 223); /*#7e66992e;*/
+  --select-text-bg-color: #ebe1f5;; /*#7e66992e;*/
   --search-select-bg-color: #8163bd;
 
   /* side bar */
